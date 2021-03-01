@@ -45,15 +45,29 @@ main>div:first-child{
 /* carta */
 .carta{
   position: relative;
-  width: 200px;
+  width: 20%;
   height: 250px;
-  background-color: white;
+  background-image: url("../img/pattern.png");
+  background-size: contain;
   display: inline-block;
   margin: 10px;
   border-radius: 10px;
   box-shadow: 0 0 5px grey;
+  /* background-color: white; */
 }
 
+.cartaz{
+    position: relative;
+    width: 20%;
+    height: 250px;
+    /* background-image: url("../img/pattern.png"); */
+    background-size: contain;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px grey;
+    background-color: white;
+}
 ul{
   margin: auto;
   list-style: none;
@@ -62,10 +76,12 @@ ul{
 
 .immaginecarta{
   position: absolute;
-  height: 100px;
-  width: 100px;
-  background-image: url("../img/noun_air_balloon_3134741.png");
-  /* z-index: 100; */
+  height: 70%;
+  width: 90%;
+  left: 5%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  visibility: hidden;
 }
 
 
@@ -75,9 +91,33 @@ ul{
   bottom: 10px;
   color: #e67919;
   font-size: 35px;
+  visibility: hidden;
 }
 
+/* immagini */
+.tram{
+  background-image: url("../img/noun_Tram_3134750.png");
+}
 
+.tractor{
+  background-image: url("../img/noun_Tractor_3134797.png")
+}
+
+.submarine{
+  background-image: url("../img/noun_Submarine_3134738.png");
+}
+
+.cruise{
+  background-image: url("../img/noun_Cruise_Ship_3134824.png")
+}
+
+.bicicletta{
+  background-image: url("../img/noun_Bicycle_3134821.png")
+}
+
+.ballon{
+  background-image: url("../img/noun_air_balloon_3134741.png")
+}
 /* footer */
 footer>span{
   text-align: center;
@@ -91,4 +131,16 @@ footer>span{
 
 .carta:hover .testocarta{
   color: #e61986;
+}
+
+.carta:hover .immaginecarta{
+  visibility: visible;
+}
+
+.carta:hover .testocarta {
+  visibility: visible;
+}
+
+.cartaz:hover .carta{
+  display: none;
 }
