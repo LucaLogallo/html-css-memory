@@ -1,0 +1,94 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Nerko One;
+}
+body{
+  background-color:#add8e6;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* container */
+.container{
+  width: 80%;
+  margin: auto;
+}
+
+/* header */
+header{
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.titolo{
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  font-size: 60px;
+  text-transform: uppercase;
+  line-height:100%;
+  color: white;
+}
+/* /header */
+
+/* main */
+
+main>div:first-child{
+  margin: auto;
+  width: 80%;
+}
+/* carta */
+.carta{
+  position: relative;
+  width: 200px;
+  height: 250px;
+  background-color: white;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px grey;
+}
+
+ul{
+  margin: auto;
+  list-style: none;
+  text-align: center;
+}
+
+.immaginecarta{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-image: url("../img/noun_air_balloon_3134741.png");
+  /* z-index: 100; */
+}
+
+
+.testocarta{
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  color: #e67919;
+  font-size: 35px;
+}
+
+
+/* footer */
+footer>span{
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  font-size: 20px;
+  line-height:100%;
+  color: black;
+}
+
+
+.carta:hover .testocarta{
+  color: #e61986;
+}
